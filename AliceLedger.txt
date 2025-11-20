@@ -1,0 +1,5 @@
+Blance is 0
+Deposit 1000
+Blance is 11000
+Withdraw 100
+Blance is 10900
