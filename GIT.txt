@@ -1,0 +1,78 @@
+GIT 
+
+to create a Repo Use git init in the working folder
+
+$ mkdir wokingdir 
+$ cd wokingdir
+$ git init
+
+once created it will be in the .git dir inside the working directory - hidden folder
+
+HEAD file pointed to the master branch
+
+to check the status of the repo use git status
+
+$ git status
+
+only mention changes that made but not committed yet - staging area
+
+can be Staging area, commited area, untracked area
+
+COMMIT
+
+$ git commit -m "message" - message is the description of the commit
+
+PULL
+
+$ git pull <origin name> <master name>
+
+PUSH
+
+$ git push <origin name> <master name>
+
+if an error in the commit
+
+$ git commit --amend - cancels the last commit you done
+
+to push a branch with amended commits you must force it
+
+$ git push -f
+
+undo the commit with the last commit
+
+$ git reset HEAD~ --soft # not used in many case, avoid the comments that rewrite the history
+
+Deleting a Branch
+
+$ git branch -d <branch name> - # only deletes the remote branch not the local branch
+
+Create a branch 
+
+$ git branch <branch name>
+
+to switch on the branch 
+
+$ git switch <branch name>
+$ git checkout <branch name>
+
+to see the Logs of the Repo
+
+$ git log # default shows only the 10 commits if u want more do --no of commits
+
+$ git show <name> # shows the changes in the particular commit
+
+Review the current changes
+
+$ git diff <filename> # only gives the commited changes
+
+$ git diff --staged # shows the changes in the staging area
+
+Phases of the Repo Changes 
+
+Untracked -> unmodified -> modified -> Staged -> Committed
+
+to unstage a file 
+
+$ git cache -u <filename>
+
+# to test the modified files in the command line

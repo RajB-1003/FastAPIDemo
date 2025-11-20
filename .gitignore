@@ -1,0 +1,5 @@
+shagul.txt
+ignorefile.txt
+temp/data/*.exe
+!temp/data/test.exe
+temp/data/*.txt
